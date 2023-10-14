@@ -14,14 +14,14 @@ deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
 
 # Edit GRUB to be able PCI-Passthrough
 Edit /etc/default/grub line to look like this (AMD):
-`GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on"`
+`GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on"`\
 `update-grub`
 # Add kernel modules
 Edit /etc/modules with these lines:
-`vfio
-vfio_iommu_type1
-vfio_pci
-vfio_virqfd`
+`vfio\
+vfio_iommu_type1\
+vfio_pci\
+vfio_virqfd`\
 `reboot`
 
 
