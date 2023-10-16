@@ -18,10 +18,10 @@ Edit /etc/default/grub line to look like this (AMD):
 `update-grub`
 # Add kernel modules
 Edit /etc/modules with these lines:
-`vfio\
-vfio_iommu_type1\
-vfio_pci\
-vfio_virqfd`\
+`vfio
+vfio_iommu_type1
+vfio_pci
+vfio_virqfd`
 `reboot`
 
 
